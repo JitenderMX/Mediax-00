@@ -1,0 +1,422 @@
+/* Extra large devices (1200px and down) */
+
+@media screen and (max-width: 1200px) {}
+
+
+/* Large devices (992px and down) */
+
+@media screen and (max-width: 992px) {
+    .sa-box.active {
+        flex-direction: column;
+    }
+}
+
+
+/* Medium devices (768px and down) */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --th-color-1: #FB3636;
+        --th-color-2: #090909;
+        --th-color-3: #FFF;
+        --th-color-4: #FFFDF6;
+        --th-color-5: #878787;
+        --th-color-6: #EBEBEB;
+        --th-color-6: #FFF0E8;
+        --th-font-1: 'Helvetica Neue', sans-serif;
+        --th-h1: calc(120px * 0.70);
+        /* 35% reduction */
+        --th-h2: calc(64px * 0.70);
+        /* 35% reduction */
+        --th-h3: calc(54px * 0.70);
+        /* 35% reduction */
+        --th-h4: calc(35px * 0.70);
+        /* 35% reduction */
+        --th-p1: calc(24px * 0.80);
+        /* 35% reduction */
+        --th-p2: calc(18px * 0.90);
+        /* 35% reduction */
+        --th-p3: calc(16px * 0.90);
+        /* 35% reduction */
+    }
+
+    main {
+        margin-top: 72px;
+    }
+
+    /* header */
+    nav .navbar-brand {
+        max-width: 100px;
+    }
+
+    nav .menu-btn .fa-bars {
+        font-size: 20px !important;
+    }
+
+    /* home hero  */
+    .home-hero .circle-img {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Service Section */
+    .service.child-1 .service-arrow {
+        transform: translate(265px, 14px);
+    }
+
+    .service.child-2 .service-arrow {
+        transform: translate(150px, 76px);
+    }
+
+    .service.child-3 .service-arrow {
+        transform: translate(315px, 137px);
+    }
+
+    .service.child-4 .service-arrow {
+        transform: translate(320px, 198px);
+    }
+
+    .service.child-5 .service-arrow {
+        transform: translate(360px, 260px);
+    }
+
+    /* success-stories */
+    .success-stories {
+        padding: 50px 0px;
+    }
+
+    /* home testimonial */
+    .ht-box img {
+        margin: auto;
+    }
+
+    .lc-box .contact-link img {
+        margin-top: 10px;
+        max-width: 70px;
+    }
+
+    /* About Hero  */
+    .about-hero {
+        padding: 80px 0;
+    }
+
+    /* We Believe */
+    .we-believe {
+        padding: 50px 0 0 0;
+    }
+
+    .we-believe img {
+        transform: translateY(0px);
+    }
+
+    /* Our Clientele */
+
+    .oc-container .oc-box {
+        height: 100px;
+    }
+
+    .oc-container .oc-box img {
+        width: auto;
+        max-width: 100px;
+        max-height: 100px;
+        margin: auto;
+    }
+
+    /* Our Creative Crew */
+    .our-creative-crew {
+        padding: 50px 0;
+    }
+
+    .occ-container .occ-box {
+        width: 3500px;
+    }
+
+    /* Project Page  */
+    #project-page .ss-box {
+        border: 1px solid var(--th-color-4);
+    }
+
+    .contact-form {
+        padding: 50px 0;
+    }
+
+    .sa-left-box p.top-space {
+        margin-top: 0px;
+    }
+
+    .contact-form .contact-detials {
+        position: static;
+        top: 0px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form .cd-box {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        padding: 20px;
+    }
+
+    .ywf-container .ywf-box {
+        max-width: 600px;
+        padding: 0px;
+    }
+
+    .ywf-container .ywf-box h4 {
+        text-transform: none;
+        font-size: 32px;
+    }
+
+    /* Openings  */
+    .opening-box {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .opening-box .apply-btn {
+        opacity: 1;
+    }
+
+    .you-will-fit {
+        padding: 0px 0px 20px 0px;
+    }
+}
+
+
+/* Small devices (576px and down) */
+
+@media screen and (max-width: 576px) {
+    :root {
+        --th-h1: calc(120px * 0.4);
+        --th-h2: calc(64px * 0.4);
+        --th-h3: calc(54px * 0.4);
+        --th-h4: calc(35px * 0.5);
+        --th-p1: calc(24px * 0.70);
+        --th-p2: calc(18px * 0.80);
+        --th-p3: calc(16px * 0.80);
+    }
+
+    /* header */
+    nav .nav-right {
+        display: flex;
+        justify-content: start;
+        gap: 3;
+        margin-top: 10px;
+    }
+
+    nav .nav-right li {
+        padding: 10px;
+        text-align: start;
+    }
+
+    /* home hero  */
+    .home-hero .circle-img {
+        max-width: 80px;
+    }
+
+    .home-hero .floating-img {
+        max-width: 250px;
+        left: 20%;
+    }
+
+    /* Take Your Brand */
+    .take-your-brand {
+        padding: 50px 0;
+    }
+
+    .tyb-box {
+        height: 190px;
+    }
+
+    /* Brand Slider */
+    .brand-slider {
+        padding: 0 0 50px 0;
+    }
+
+    .bs-box {
+        width: 200px;
+        height: 120px;
+        display: flex;
+    }
+
+    .bs-box img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    /* Service Section */
+    .service {
+        padding: 50px 0;
+    }
+
+    .service.child-1 .service-arrow {
+        transform: translate(200px, 13px);
+    }
+
+    .service.child-2 .service-arrow {
+        transform: translate(115px, 66px);
+    }
+
+    .service.child-3 .service-arrow {
+        transform: translate(240px, 120px);
+    }
+
+    .service.child-4 .service-arrow {
+        transform: translate(250px, 172px);
+    }
+
+    .service.child-5 .service-arrow {
+        transform: translate(270px, 225px);
+    }
+
+
+    /* .service-arrow {
+        display: none;
+    } */
+
+    /* Success Stories */
+    .success-stories .ss-box {
+        height: 350px;
+        filter: grayscale(0%);
+    }
+
+    .success-stories .ss-box .ss-text {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .success-stories .ss-box .ss-text::after {
+        transform: scale(1, 1);
+    }
+
+    .success-stories .ss-box .ss-text img {
+        opacity: 1;
+        max-width: 50px;
+    }
+
+    /* home testimonial */
+    .ht-box img {
+        max-width: 150px;
+    }
+
+    /* About Hero  */
+    .about-hero {
+        padding: 50px 0;
+    }
+
+    /* Our Clientele */
+
+    .oc-container .oc-box {
+        height: 80px;
+    }
+
+    .oc-container .oc-box img {
+        max-width: 88px;
+        max-height: 80px;
+    }
+
+    /* Service Hero Image */
+    .service {
+        background-position: top center;
+    }
+
+    .service-img-sec {
+        padding: 30px;
+        transform: translateY(0%);
+    }
+
+    .service .sec-h h6 {
+        color: var(--th-color-2) !important;
+    }
+
+    .service-box h4 {
+        color: var(--th-color-2) !important;
+    }
+
+    .service.child-1 {
+        background: url(../image/service-1-mob.jpg);
+    }
+
+    .service.child-2 {
+        background: url(../image/service-2-mob.jpg);
+    }
+
+    .service.child-3 {
+        background: url(../image/service-3-mob.jpg);
+    }
+
+    .service.child-4 {
+        background: url(../image/service-4-mob.jpg);
+    }
+
+    .service.child-5 {
+        background: url(../image/service-5-mob.jpg);
+    }
+
+    .sa-box-1 .sa-right-img {
+        background-image: url(../image/service-1-mob.jpg);
+    }
+
+    
+
+    /* Service Accordion */
+    .service-accordion {
+        padding: 20px 0 0 0;
+    }
+
+    .sa-right-img {
+        width: 100%;
+        min-width: 300px;
+        min-height: 300px;
+        height: 100%;
+    }
+
+    .sa-box .sa-right-box .sa-right-img {
+        display: block;
+    }
+
+    .sa-box .sa-left-box .top-space-no {
+        display: none;
+    }
+
+    .sa-box .sa-left-box .top-space {
+        display: block;
+    }
+
+    .sa-box.active .sa-left-box .top-space {
+        display: block;
+    }
+
+    .sa-left-box p.top-space {
+        max-width: 100%;
+        margin-top: 0px;
+    }
+
+    .sa-box .sa-right-box {
+        padding: 0px;
+    }
+
+    .sa-box .sa-left-box img {
+        display: none;
+    }
+
+    .sa-left-box {
+        padding: 20px;
+    }
+
+    .error-404 h1 {
+        font-size: 100px !important;
+    }
+
+    /* Apply Head  */
+    .apply-head .ah-img {
+        /* width: 100%; */
+        max-width: 40px;
+    }
+
+    /* Job Description */
+    .job-description .jd-text {
+        padding: 15px;
+    }
+}

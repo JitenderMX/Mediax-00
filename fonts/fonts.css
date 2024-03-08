@@ -1,0 +1,43 @@
+/* font.css */
+
+/* Helvetica Neue Black */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica-Neue-Black.ttf') format('truetype');
+    font-weight: 800;
+}
+
+/* Helvetica Neue Bold */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica–Neue-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* Helvetica Neue Medium */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica-Neue-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/* Helvetica Neue Regular
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica-Neue.ttf') format('truetype');
+    font-weight: 400;
+} */
+
+/* Helvetica Neue Light */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica-Neue-Light.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Helvetica Neue Thin */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('Helvetica-Neue/Helvetica-Neue-Thin.ttf') format('truetype');
+    font-weight: 300;
+}

@@ -1,0 +1,95 @@
+<nav>
+  <div id="nav-show" class="container-xxl py-4 px-3">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-8">
+        <a class="page-load-link navbar-brand" href="index.html">
+          <img src="image/logo.png" alt="">
+        </a>
+      </div>
+      <div class="col-4 text-end">
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nav-hide" class="p-4">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-7 col-sm-8">
+        <a class="page-load-link navbar-brand" href="index.html">
+          <img src="image/logo.png" alt="">
+        </a>
+      </div>
+      <div class="col-5 col-sm-4 text-end">
+        <div class="menu-btn">
+          Go Back
+        </div>
+      </div>
+    </div>
+    <div id="menu-container" class="row justify-content-between align-items-end">
+      <div class="col-sm-9">
+        <ul class="nav-left">
+          <li><a data-nav="home-page" href="index.html" class="page-load-link">Home</a></li>
+          <li><a data-nav="about-page" href="about.html" class="page-load-link">Who We Are </a></li>
+          <li><a data-nav="project-page" href="project.html" class="page-load-link">Our Work</a></li>
+          <li><a data-nav="service-page" href="service.html" class="page-load-link">What We Do</a></li>
+          <li><a data-nav="contact-page" href="contact.html" class="page-load-link">Contact</a></li>
+          <li><a data-nav="career-page" href="career.html" class="page-load-link">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="nav-right">
+          <li><b>FOLLOW US</b></li>
+          <li><a href="https://www.instagram.com/mediaxindia/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/mediaxindia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/mediaxindia" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+<script>
+  $('.menu-btn').on('click', function () {
+    $("nav #nav-hide").toggleClass("active");
+    $("body").toggleClass("overflow-hidden");
+  });
+  $(".nav-left a").on('click', function () {
+    $("#nav-hide").removeClass('active');
+    $("body").removeClass('overflow-hidden');
+  })
+  // Get the body id value
+  var bodyId = $('body').attr('id');
+
+  // Find the element with class "nav-link" and matching data-nav attribute
+  $('.page-load-link[data-nav="' + bodyId + '"]').addClass('active');
+</script>
+<!-- <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="page-load-link navbar-brand" href="#home">
+        <img src="image/logo.png" alt="">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="page-load-link nav-link" href="#about" data-page="about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="page-load-link nav-link" href="#project" data-page="project">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="page-load-link nav-link" href="#service" data-page="service">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="page-load-link nav-link" href="#career" data-page="career">CAREERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="page-load-link nav-link" href="#contact" data-page="contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->

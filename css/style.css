@@ -1,0 +1,1535 @@
+/* 01. Google Font Start ------------------------------ */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+
+/* ------------- Google Font End ------------- */
+
+
+/* 02.base Start ------------------------------ */
+
+:root {
+    --th-color-1: #FB3636;
+    --th-color-2: #090909;
+    --th-color-3: #FFF;
+    --th-color-4: #FFFDF6;
+    --th-color-5: #878787;
+    --th-color-6: #EBEBEB;
+    --th-color-6: #FFF0E8;
+    --th-font-1: 'Helvetica Neue';
+    --th-h1: 120px;
+    --th-h2: 64px;
+    --th-h3: 54px;
+    --th-h4: 35px;
+    --th-p1: 24px;
+    --th-p2: 18px;
+    --th-p3: 16px;
+}
+
+* {
+    user-select: none;
+}
+
+main {
+    margin-top: 84px;
+}
+
+.container-xxl {
+    --bs-gutter-x: 3rem !important;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--th-color-3);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--th-font-family-1);
+    color: var(--th-color-2);
+    line-height: 120%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 span.text-red,
+h2 span.text-red,
+h3 span.text-red,
+h4 span.text-red,
+h5 span.text-red,
+h6 span.text-red {
+    color: var(--th-color-1) !important;
+}
+
+h1 {
+    font-size: var(--th-h1) !important;
+}
+
+h2 {
+    font-size: var(--th-h2) !important;
+}
+
+h3 {
+    font-size: var(--th-h3) !important;
+}
+
+h4 {
+    font-size: var(--th-h4) !important;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: var(--th-p2) !important;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.btn-th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.btn-th p {
+    color: var(--th-color-4);
+    transition: all .5s;
+}
+
+.btn-th img {
+    transform: rotate(90deg);
+    transition: all .5s;
+}
+
+
+.bt-text{
+    padding: 10px 0px;
+    transform: translateX(0);
+    transition: all .5s;
+}
+.bt-img{
+    padding: 10px 0px;
+    transform: translateX(0);
+    transition: all .5s;
+}
+.btn-th:hover .bt-text{
+    transform: translateX(100%);
+}
+.btn-th:hover .bt-img{
+    transform: translateX(-150%);
+}
+.bt-text p {
+    color: var(--th-color-2);
+    margin: 0;
+}
+
+.bt-img img {
+    transform: rotate(0deg) !important;
+    transition: all .5s;
+}
+
+p {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p2);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.sec-h {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sec-h .fa-solid {
+    font-size: var(--th-p2);
+    color: var(--th-color-1) !important;
+}
+
+.th-btn {
+    text-align: center;
+    font-family: var(--th-font-1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.5px;
+    padding: 18px 30px;
+    border-radius: 50px;
+}
+
+.th-btn-1 {
+    color: var(--th-color-2);
+    border: 2px solid var(--th-color-2);
+}
+
+.th-btn-1 .fas {
+    color: var(--th-color-2);
+}
+
+.th-btn-2 {
+    color: var(--th-color-3);
+    border: 2px solid var(--th-color-1);
+}
+
+.th-btn-2 .fas {
+    color: var(--th-color-1);
+}
+
+
+/* Thank You Page  */
+.thank-row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-row img {
+    width: 100%;
+    max-width: 300px;
+}
+
+Scroll Bar style start::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--th-color-4);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--th-color-1);
+}
+
+
+/* Scroll Bar style End */
+
+
+/* ------------- base End ------------- */
+
+
+/* Headre Section Start ------------------------------ */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--th-color-2);
+    z-index: 100;
+}
+
+nav {
+    position: relative;
+}
+
+nav .navbar-brand {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+}
+
+nav .menu-btn {
+    color: var(--th-color-4);
+    font-size: var(--th-p2);
+    cursor: pointer;
+    font-weight: 300;
+    text-align: end;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+nav .menu-btn .fa-bars {
+    font-size: 35px !important;
+}
+
+nav .menu-btn:hover {
+    color: var(--th-color-1);
+}
+
+nav .navbar-brand img {
+    width: 100% !important;
+}
+
+nav #nav-hide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(-100%);
+    background-color: var(--th-color-2);
+    overflow-y: scroll;
+    transition: all .5s;
+    background-color: var(--th-color-2);
+}
+
+nav #nav-hide.active {
+    transform: translateY(0%);
+}
+
+nav .nav-right li,
+nav .nav-right b,
+nav .nav-right a {
+    font-family: var(--th-font-1);
+    font-size: var(--th-p2);
+    color: var(--th-color-3);
+    font-weight: 300;
+    line-height: 130%;
+    letter-spacing: 1.4px;
+    text-align: end;
+    padding-top: 10px;
+}
+
+#menu-container {
+    padding: 50px 0;
+}
+
+#menu-container .nav-left a,
+#menu-container .nav-left a::after,
+#menu-container .nav-left a::before {
+    font-family: var(--th-font-1);
+    color: var(--th-color-4);
+    font-size: var(--th-h2);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    transition: all .5s;
+}
+
+#menu-container .nav-left a {
+    display: block;
+    overflow: hidden !important;
+}
+
+#menu-container .nav-left li:nth-child(1) a::after,
+#menu-container .nav-left li:nth-child(1) a::before {
+    content: "Home";
+}
+
+#menu-container .nav-left li:nth-child(2) a::after,
+#menu-container .nav-left li:nth-child(2) a::before {
+    content: "Who We Are";
+}
+
+#menu-container .nav-left li:nth-child(3) a::after,
+#menu-container .nav-left li:nth-child(3) a::before {
+    content: "Our Work";
+}
+
+#menu-container .nav-left li:nth-child(4) a::after,
+#menu-container .nav-left li:nth-child(4) a::before {
+    content: "What We Do";
+}
+
+#menu-container .nav-left li:nth-child(5) a::after,
+#menu-container .nav-left li:nth-child(5) a::before {
+    content: "Contact";
+}
+
+#menu-container .nav-left li:nth-child(6) a::after,
+#menu-container .nav-left li:nth-child(6) a::before {
+    content: "Careers";
+}
+
+#menu-container .nav-left a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    width: 100%;
+    background-color: var(--th-color-2);
+    transition: all .5s;
+}
+
+#menu-container .nav-left a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    background-color: var(--th-color-2);
+    color: var(--th-color-1);
+    transition: all .5s;
+}
+
+#menu-container .nav-left a:hover:after {
+    transform: translateY(-100%);
+}
+
+#menu-container .nav-left a:hover:before {
+    transform: translateY(0%);
+}
+
+#menu-container .nav-left a.active::after {
+    transform: translateY(-100%);
+}
+
+#menu-container .nav-left a.active::before {
+    transform: translateY(0%);
+}
+
+/* -------------  Header Section  End ------------- */
+
+
+/* 1. Home Hero Banner Section Start ------------------------------ */
+@keyframes zigzag {
+    0% {
+        transform: translate(-30%, -60%) scale(1);
+    }
+
+    25% {
+        transform: translate(-0%, -40%) scale(.7);
+    }
+
+    50% {
+        transform: translate(30%, -60%) scale(.8);
+    }
+
+    75% {
+        transform: translate(50%, -40%) scale(.9);
+    }
+
+    100% {
+        transform: translate(80%, -60%) scale(.7);
+    }
+}
+
+.home-hero {
+    background: var(--th-color-2);
+    padding: 80px 0 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero .hh-text {
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero h1 {
+    color: var(--th-color-3);
+}
+
+.home-hero p {
+    color: var(--th-color-3);
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-hero h6 {
+    color: var(--th-color-3);
+}
+
+.home-hero .circle-img {
+    max-width: 130px;
+    width: 100%;
+}
+
+.home-hero .floating-img {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.3s ease-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -60%);
+    z-index: 1;
+    animation: zigzag 10s infinite alternate;
+}
+
+/* -------------  Home Hero Banner Section  End ------------- */
+
+
+/* 2. Take Your Brand Section Start ------------------------------ */
+.take-your-brand {
+    padding: 80px 0;
+}
+
+.take-your-brand .tyb-h .tyb-h-img {
+    /* width: 100%; */
+    max-width: 70px;
+}
+
+.tyb-box {
+    border-radius: 20px;
+    padding: 20px;
+    height: 250px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tyb-box p {
+    font-size: var(--th-p1);
+    margin: 0;
+}
+
+.tyb-box .red-h {
+    color: var(--th-color-1);
+}
+
+.tyb-box.tyb-box-3 .red-h {
+    color: #F5F5F5;
+    text-shadow: -1px 1px 0 var(--th-color-1),
+        1px 1px 0 var(--th-color-1),
+        1px -1px 0 var(--th-color-1),
+        -1px -1px 0 var(--th-color-1);
+}
+
+/* -------------  Take Your Brand Section  End ------------- */
+
+/* 3.Brand Slider Section Start ------------------------------ */
+.brand-slider {
+    padding: 50px 0;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.bs-container {
+    display: flex;
+    width: 10000px;
+    /* transform: translateX(-3000px); */
+    animation: moveLeftToRight 90s linear infinite;
+}
+
+.bs-box {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--th-color-5);
+}
+
+.bs-box img {
+    max-width: 150px;
+    max-height: 150px;
+    filter: grayscale(100%);
+}
+
+/* ------------- Brand Slider Section  End ------------- */
+
+/* 4.Service Section Start ------------------------------ */
+.service {
+    padding: 100px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.service .sec-h h6 {
+    color: var(--th-color-3);
+    transition: all .5s;
+}
+
+.service-box h4 {
+    font-weight: 400;
+    color: var(--th-color-2);
+    margin: 0;
+    transition: all .5s;
+}
+
+.service-arrow {
+    color: var(--th-color-3);
+    font-size: var(--th-p1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(270px, 13px);
+    transition: all .5s;
+}
+
+.service.child-1 {
+    background: url(../image/service-1.jpg);
+}
+
+.service.child-2 {
+    background: url(../image/service-2.jpg);
+}
+
+.service.child-3 {
+    background: url(../image/service-3.jpg);
+}
+
+.service.child-4 {
+    background: url(../image/service-4.jpg);
+}
+
+.service.child-5 {
+    background: url(../image/service-5.jpg);
+}
+
+.service.child-1 .service-box h4 {
+    color: var(--th-color-3);
+}
+
+.service.child-1 .service-box p {
+    color: var(--th-color-3);
+}
+
+.service.child-1 .service-box.child-1 p {
+    color: var(--th-color-3);
+}
+
+.service.child-1 .service-box.child-1 h4 {
+    font-weight: 700;
+    color: var(--th-color-3);
+}
+
+.service.child-1 .service-arrow {
+    transform: translate(270px, 13px);
+    color: var(--th-color-3);
+}
+
+.service.child-2 .service-arrow {
+    transform: translate(150px, 74px);
+    color: var(--th-color-2);
+}
+
+.service.child-3 .service-arrow {
+    transform: translate(320px, 134px);
+    color: var(--th-color-2);
+}
+
+.service.child-4 .service-arrow {
+    transform: translate(330px, 194px);
+    color: var(--th-color-2);
+}
+
+.service.child-5 .service-arrow {
+    transform: translate(360px, 257px);
+    color: var(--th-color-2);
+}
+
+.service.child-2 .sec-h h6,
+.service.child-3 .sec-h h6,
+.service.child-4 .sec-h h6,
+.service.child-5 .sec-h h6 {
+    color: var(--th-color-2);
+}
+
+.service.child-1 .service-box.child-1 h4,
+.service.child-2 .service-box.child-2 h4,
+.service.child-3 .service-box.child-3 h4,
+.service.child-4 .service-box.child-4 h4,
+.service.child-5 .service-box.child-5 h4 {
+    font-weight: 700;
+}
+
+.service.child-1 .service-arrow {
+    transform: translate(371px, 18px);
+}
+
+.service.child-2 .service-arrow {
+    transform: translate(210px, 92px);
+}
+
+.service.child-3 .service-arrow {
+    transform: translate(380px, 167px);
+}
+
+.service.child-4 .service-arrow {
+    transform: translate(460px, 240px);
+}
+
+.service.child-5 .service-arrow {
+    transform: translate(500px, 315px);
+}
+
+.service-text {
+    background-color: var(--th-color-4);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.service-text h5 {
+    text-transform: capitalize !important;
+}
+
+.service-text .data-child {
+    display: none;
+}
+
+.service.child-1 .service-text .data-child[data-child="child-1"] {
+    display: flex;
+}
+
+.service.child-2 .service-text .data-child[data-child="child-2"] {
+    display: flex;
+}
+
+.service.child-3 .service-text .data-child[data-child="child-3"] {
+    display: flex;
+}
+
+.service.child-4 .service-text .data-child[data-child="child-4"] {
+    display: flex;
+}
+
+.service.child-5 .service-text .data-child[data-child="child-5"] {
+    display: flex;
+}
+
+/* ------------- Service Section  End ------------- */
+
+/* 5.Success Stories Section Start ------------------------------ */
+.success-stories {
+    padding: 80px 0;
+}
+
+.success-stories .ss-box {
+    width: 100%;
+    height: 500px;
+    filter: grayscale(50%);
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    transition: all .5s;
+}
+
+.success-stories .ss-box:hover {
+    filter: grayscale(0);
+}
+
+.success-stories .ss-box-1 {
+    background: url(../image/success-storiy-1.jpg);
+}
+
+.success-stories .ss-box-2 {
+    background: url(../image/success-storiy-2.jpg);
+}
+
+.success-stories .ss-box-3 {
+    background: url(../image/success-storiy-3.jpg);
+}
+
+.success-stories .ss-box-4 {
+    background: url(../image/success-storiy-4.jpg);
+}
+
+.success-stories .ss-box-5 {
+    background: url(../image/success-storiy-5.jpg);
+}
+
+.success-stories .ss-box-6 {
+    background: url(../image/success-storiy-6.jpg);
+}
+.success-stories .ss-box-7 {
+    background: url(../image/success-storiy-7.jpg);
+}
+
+.success-stories .ss-box-8 {
+    background: url(../image/success-storiy-8.jpg);
+}
+
+.success-stories .ss-box-9 {
+    background: url(../image/success-storiy-9.jpg);
+}
+
+.success-stories .ss-box .ss-text {
+    width: 100%;
+    max-width: 340px;
+    padding: 30px;
+    position: relative;
+    /* margin-left: 30px; */
+}
+
+.success-stories .ss-box .ss-text h4 {
+    color: var(--th-color-3);
+    position: relative;
+    z-index: 2;
+}
+
+.success-stories .ss-box .ss-text p {
+    color: var(--th-color-3);
+    position: relative;
+    z-index: 2;
+}
+
+.success-stories .ss-box .ss-text img {
+    width: 100%;
+    max-width: 80px;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    transition: all .5s;
+}
+
+.success-stories .ss-box:hover .ss-text img {
+    opacity: 1;
+}
+
+.success-stories .ss-box .ss-text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--th-color-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform-origin: bottom left;
+    transform: scale(0, 0);
+    transition: all .5s;
+}
+
+.success-stories .ss-box:hover .ss-text::after {
+    transform: scale(1, 1);
+}
+
+/* ------------- Success Stories Section  End ------------- */
+
+/* 6.We Also Do Section Start ------------------------------ */
+.we-also-do {
+    padding: 50px 0;
+}
+
+/* .we-also-do .wad-box {} */
+
+.we-also-do .wad-box img {
+    filter: grayscale(50%);
+    transition: all .5s;
+}
+
+.we-also-do .wad-box:hover img {
+    filter: grayscale(0%);
+}
+
+/* ------------- We Also Do Section  End ------------- */
+
+/* 7.Home Testimonial Section Start ------------------------------ */
+
+.home-testimonial {
+    background-color: var(--th-color-2);
+    padding: 80px 0;
+}
+
+.home-testimonial h2 {
+    max-width: 600px;
+    color: var(--th-color-4);
+}
+
+.ht-box img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.ht-box p {
+    color: var(--th-color-4);
+    font-weight: 300;
+}
+
+.ht-box .quotes {
+    color: var(--th-color-1);
+    font-size: var(--th-p1);
+}
+
+.t-line {
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--th-color-5);
+}
+
+.t-arrow .fa-solid {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: var(--th-color-1);
+    text-align: center;
+    border-radius: 50%;
+    font-size: var(--th-p1);
+    background-color: var(--th-color-4);
+    cursor: pointer;
+}
+
+/* ------------- Home Testimonial Section  End ------------- */
+
+/* 8.Let's Connect Section Start ------------------------------ */
+.let-connect {
+    /* padding: 50px 0px; */
+    text-align: center;
+}
+
+.lc-box {
+    background-color: var(--th-color-1);
+    padding: 120px 0;
+}
+
+.lc-box h3 {
+    color: var(--th-color-4);
+}
+
+.lc-box h3 {
+    color: var(--th-color-4);
+}
+
+.lc-box .contact-link p {
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+.lc-box .contact-link img {
+    width: 100%;
+    max-width: 110px;
+}
+
+/* ------------- Let's Connect Section  End ------------- */
+
+/* 9.Footer Section Start ------------------------------ */
+footer {
+    padding: 200px 0 50px 0;
+    background-color: var(--th-color-2);
+}
+
+footer img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+footer li {
+    padding-top: 8px;
+}
+
+footer b,
+footer a {
+    font-family: var(--th-font-1);
+    font-size: var(--th-p2);
+    font-weight: 300;
+    line-height: 130%;
+    color: #9A9A9A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer b {
+    font-weight: 600;
+}
+
+/* ------------- Footer Section  End ------------- */
+
+
+
+/* 9.About Hero Section Start ------------------------------ */
+.about-hero {
+    padding: 150px 0;
+    background-color: var(--th-color-2);
+}
+
+.about-hero h2 {
+    color: var(--th-color-4);
+}
+
+/* ------------- About Hero Section  End ------------- */
+
+/* 10.We Believe Section Start ------------------------------ */
+.we-believe {
+    padding: 80px 0 0 0;
+}
+
+.we-believe p {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 300;
+    line-height: 120%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.we-believe img {
+    width: 100%;
+    transform: translateY(-150px);
+}
+
+/* ------------- We Believe Section  End ------------- */
+
+
+/* 11.Our Clientele Section Start ------------------------------ */
+.our-clientele {
+    padding: 50px 0;
+}
+
+.our-clientele p {
+    font-size: var(--th-p1);
+}
+
+.oc-container .oc-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.oc-container .oc-box img{
+    width: 75%;
+}
+
+/* ------------- Our Clientele Section  End ------------- */
+
+/* 12.Our Clientele Section Start ------------------------------ */
+.our-creative-crew {
+    padding: 100px 0;
+    background-color: var(--th-color-2);
+}
+
+.our-creative-crew h2 {
+    color: var(--th-color-4);
+}
+
+.our-creative-crew p {
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+.occ-container .occ-box {
+    display: flex;
+    width: 6720px;
+    animation: moveLeftToRight 60s linear infinite;
+}
+
+.occ-container .occ-box-1 {
+    background-color: var(--th-color-1);
+}
+
+.occ-container .occ-box:nth-child(2) {
+    transform: translateX(-100px);
+}
+
+.occ-container .occ-img-box {
+    width: 280px;
+    padding-right: 20px;
+}
+
+.occ-container .occ-img-box img {
+    width: 100%;
+}
+
+.occ-text p:first-child {
+    font-size: var(--th-p2);
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+}
+
+.occ-text p:last-child {
+    font-size: var(--th-p3);
+    font-weight: 400;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* ------------- Our Clientele Section  End ------------- */
+
+/* 13.Service Hero Image Section Start ------------------------------ */
+.service-img-sec {
+    padding: 0 0 50px 0;
+    position: relative;
+    transform: translateY(-15%);
+}
+
+/* ------------- Service Hero Image Section  End ------------- */
+
+
+/* 14.Service Accordion Section Start ------------------------------ */
+.sa-box {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.sa-box.active {
+    flex-direction: row;
+}
+
+
+.sa-box .sa-box-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sa-left-box {
+    padding: 50px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.sa-box.active .sa-left-box img {
+    transform: rotate(180deg);
+}
+
+/* .sa-box.active .sa-right-box {
+    padding: 20px;
+} */
+
+.sa-right-img {
+    width: 100%;
+    min-width: 500px;
+    min-height: 400px;
+    height: 100%;
+    border-radius: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sa-box-1 .sa-right-img {
+    background-image: url(../image/service-1-mob.jpg);
+}
+.sa-box-2 .sa-right-img {
+    background-image: url(../image/service-2-mob.jpg);
+}
+
+.sa-box-3 .sa-right-img {
+    background-image: url(../image/service-3-mob.jpg);
+}
+
+.sa-box-4 .sa-right-img {
+    background-image: url(../image/service-4-mob.jpg);
+}
+
+.sa-box-5 .sa-right-img {
+    background-image: url(../image/service-5-mob.jpg);
+}
+
+
+/*
+.sa-box-2 .sa-right-img {
+    background-image: url(../image/service-2.jpg);
+}
+
+.sa-box-3 .sa-right-img {
+    background-image: url(../image/service-3.jpg);
+}
+
+.sa-box-4 .sa-right-img {
+    background-image: url(../image/service-4.jpg);
+}
+
+.sa-box-5 .sa-right-img {
+    background-image: url(../image/service-5.jpg);
+}
+
+.sa-box-6 .sa-right-img {
+    background-image: url(../image/sa-box-1.png);
+} 
+*/
+
+.sa-right-box .sa-right-img {
+    display: none;
+}
+
+.sa-box.active .sa-right-box .sa-right-img {
+    display: block;
+}
+
+.sa-box.active .sa-left-box .top-space-no {
+    display: none;
+}
+
+.sa-box .sa-left-box .top-space {
+    display: none;
+}
+
+.sa-box.active .sa-left-box .top-space {
+    display: block;
+}
+
+.sa-left-box h6 {
+    font-size: var(--th-p1) !important;
+    text-shadow: -1px 1px 0 var(--th-color-2), 1px 1px 0 var(--th-color-2), 1px -1px 0 var(--th-color-2), -1px -1px 0 var(--th-color-2);
+    color: #F5F5F5;
+    letter-spacing: 2px;
+}
+
+.sa-left-box p {
+    font-size: var(--th-p1);
+    margin-bottom: 0;
+}
+
+.sa-left-box p.top-space {
+    max-width: 95%;
+    margin-top: 70px;
+}
+
+/* ------------- Service Accordion Section  End ------------- */
+
+/* 15.Project Section Start ------------------------------ */
+#project-page .success-stories {
+    background-color: var(--th-color-2);
+}
+
+#project-page .success-stories .col-md-8 h2 {
+    color: var(--th-color-4);
+}
+
+#project-page .success-stories .col-md-8 p {
+    max-width: 900px;
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+#project-page .let-connect {
+    background-color: var(--th-color-2);
+}
+
+/* ------------- Project Section  End ------------- */
+
+/* 16.Contact Form Section Start ------------------------------ */
+.contact-form {
+    padding: 100px 0;
+}
+
+.contact-form p {
+    max-width: 900px;
+    font-size: var(--th-p1);
+}
+
+.contact-form .form-label {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+
+.contact-form .form-check-label {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-weight: 400;
+}
+
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid var(--th-color-2);
+}
+
+.contact-form input[type="checkbox"] {
+    border-radius: 0;
+}
+
+.contact-form button[type="submit"] {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.contact-form button[type="submit"] img {
+    max-width: 40px;
+}
+
+.contact-form .contact-detials {
+    position: sticky;
+    top: 100px;
+    background-color: var(--th-color-1);
+    padding: 40px 0;
+}
+
+.contact-form .cd-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    background-color: var(--th-color-3);
+    padding: 20px;
+    text-align: right;
+}
+
+.contact-form .cd-box .cd-top-box h6,
+.contact-form .cd-box .cd-bottom-box h6 {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1) !important;
+    font-weight: 400;
+}
+
+.contact-form .cd-box .cd-bottom-box h6 {
+    font-weight: 700;
+}
+
+.contact-form .cd-box .cd-top-box ul li a {
+    color: var(--th-color-2) !important;
+    font-family: var(--th-font-1) !important;
+    font-size: var(--th-p1) !important;
+    font-weight: 400;
+}
+
+.contact-form .cd-box .cd-bottom-box ul li a {
+    color: var(--th-color-5) !important;
+    font-family: var(--th-font-1) !important;
+    font-size: var(--th-p2) !important;
+    font-weight: 400;
+}
+
+
+/* ------------- Contact Form Section  End ------------- */
+
+
+/* 17.Located Section Start ------------------------------ */
+.located {
+    padding: 50px 0;
+}
+
+.error-404 {
+    padding: 130px 0;
+}
+
+.error-404 h1 {
+    font-size: 180px !important;
+}
+
+/* ------------- Located Section  End ------------- */
+
+
+/* 18.Career Hero Section Start ------------------------------ */
+.career-hero {
+    padding: 50px 0;
+}
+
+/* ------------- Career Hero Section  End ------------- */
+
+/* 19.You Will Fit Section Start ------------------------------ */
+.you-will-fit {
+    padding: 50px 0;
+}
+
+.ywf-container .ywf-box {
+    max-width: 650px;
+    padding: 20px 20px 20px 0;
+}
+
+.ywf-container .ywf-box h4 {
+    text-transform: none;
+    font-weight: 500;
+}
+
+/* ------------- You Will Fit Section  End ------------- */
+
+/* 20.Opening Section Start ------------------------------ */
+.opening-head h5 {
+    color: var(--th-color-5);
+    font-size: var(--th-p1);
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.opening-box {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #878787;
+    border-bottom: 1px solid #878787;
+    text-align: center;
+    transition: all .5s;
+}
+
+.opening-box h4 {
+    transition: all .5s;
+}
+
+.opening-box p {
+    /* font-size: var(--th-p1); */
+    font-weight: 400;
+    transition: all .5s;
+}
+
+.opening-box .apply-btn {
+    opacity: 0;
+}
+
+.opening-box .apply-btn .ab-text {
+    transform: translateX(0);
+    transition: all .5s;
+}
+
+.opening-box:hover {
+    background-color: var(--th-color-2);
+}
+
+.opening-box:hover h4,
+.opening-box:hover p {
+    color: var(--th-color-4);
+}
+
+.opening-box:hover .apply-btn {
+    opacity: 1;
+}
+
+.opening-box .apply-btn .ab-img {
+    transform: translateX(0);
+    transition: all .5s;
+}
+
+.opening-box .apply-btn:hover .ab-text {
+    transform: translateX(120%);
+}
+
+.opening-box .apply-btn:hover .ab-img {
+    transform: translateX(-120%);
+}
+
+/* ------------- Opening Section  End ------------- */
+
+
+/* 21.Warning Section Start ------------------------------ */
+.warning-box {
+    background-color: var(--th-color-1);
+    padding: 50px 30px;
+    margin-bottom: 50px;
+}
+
+.warning-box h2 {
+    color: var(--th-color-4);
+}
+
+.warning-box p {
+    color: var(--th-color-4);
+}
+
+/* ------------- Warning Section  End ------------- */
+
+/* 22.Apply Head Section Start ------------------------------ */
+.apply-head {
+    padding: 50px 0px;
+}
+
+.apply-head .ah-loc {
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+
+.apply-head .fa-solid {
+    font-size: var(--th-p1);
+}
+
+.apply-head .ah-time {
+    font-size: var(--th-p1);
+    color: var(--th-color-5);
+}
+
+.apply-head .ah-text p {
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+
+.apply-head .ah-img {
+    /* width: 100%; */
+    max-width: 100px;
+}
+
+.apply-head .ah-img img {
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+/* ------------- Apply Head Section  End ------------- */
+
+/* 23.Job Description Section Start ------------------------------ */
+.job-description {
+    padding: 0 0 50px 0;
+}
+
+.job-description .jd-text {
+    padding: 30px;
+    background-color: #F8F9F9;
+}
+
+.job-description .jd-text li.in-visible {
+    display: none;
+}
+
+.job-description .jd-text.active li.in-visible {
+    display: list-item;
+}
+
+.job-description .jd-text.active .show-more img {
+    transform: rotate(270deg);
+}
+
+.job-description .jd-text h4 {
+    font-size: var(--th-p1) !important;
+    color: var(--th-color-2);
+}
+
+.job-description .jd-text ul {
+    list-style: disc;
+    color: var(--th-color-2);
+}
+
+.job-description .jd-text li p {
+    color: var(--th-color-2);
+}
+.sm-text p{
+    color: var(--th-color-2);
+}
+
+/* ------------- Job Description Section  End ------------- */
+
+.af-img {
+    width: 100%;
+    max-width: 400px;
+    /* margin: auto; */
+    /* position: sticky;
+    top: 100px; */
+}
+
+.af-icon a {
+    font-size: var(--th-p1);
+    color: var(--th-color-2);
+}

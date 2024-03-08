@@ -1,0 +1,120 @@
+<div class="container-xxl" data-aos="fade-up" data-aos-duration="500">
+    <div class="row justify-content-between position-relative">
+        <div class="col-sm-6 col-lg-5 d-flex flex-column justify-content-between">
+            <div class="af-img"><img src="image/say-hello.png" alt="" class="w-100"></div>
+            <div class="af-icon mt-3">
+                <p><b>Follow :</b></p>
+                <ul class="d-flex">
+                    <li class="me-2">
+                        <a href="https://www.instagram.com/mediaxindia/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="ms-2 me-2">
+                        <a href="https://www.linkedin.com/company/mediaxindia/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="ms-2">
+                        <a href="https://www.facebook.com/mediaxindia" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-7 order-md-0">
+            <h4 class="text-center my-2 my-sm-3">
+                Job application form
+            </h4>
+            <form action="apply_email.php" method="post" class="row g-3 needs-validation"
+                enctype="multipart/form-data" novalidate>
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="full-name" class="form-label">Full Name*</label>
+                    <input type="text" class="form-control" name="full-name" id="full-name" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid full name.
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-md-5 mt-4">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="text" class="form-control" name="email" id="email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-md-5 mt-4">
+                    <label for="contact-number" class="form-label">Phone*</label>
+                    <input type="text" class="form-control" name="number" id="contact-number" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid phone number.
+                    </div>
+                </div>
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="company" class="form-label">Current Company*</label>
+                    <input type="text" class="form-control" name="company" id="company" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid company name.
+                    </div>
+                </div>
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="ctc" class="form-label">Current CTC*</label>
+                    <input type="text" class="form-control" name="ctc" id="ctc" required>
+                    <div class="invalid-feedback">
+                        Please provide your current ctc.
+                    </div>
+                </div>
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="notice-period" class="form-label">Notice Period*</label>
+                    <input type="text" class="form-control" name="notice-period" id="notice-period"
+                        required>
+                    <div class="invalid-feedback">
+                        Please provide your notice period.
+                    </div>
+                </div>
+
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="upload-resume" class="form-label">Upload Resume*</label>
+                    <input type="file" class="form-control" name="upload-resume" id="upload-resume"
+                        accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.webp" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid value.
+                    </div>
+                </div>
+                <div class="col-lg-12 pe-md-5 mt-4">
+                    <label for="where-you-hear" class="form-label">Where did you hear about us?*</label>
+                    <input type="text" class="form-control" name="where-you-hear" id="where-you-hear"
+                        required>
+                    <div class="invalid-feedback">
+                        Please provide your resume in pdf or document format.
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <button class="" type="submit"> Submit <img src="image/sa-img.png" alt=""></button>
+                </div>
+            </form>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (() => {
+                    'use strict'
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    const forms = document.querySelectorAll('.needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+                })()
+            </script>
+        </div>
+    </div>
+</div>
