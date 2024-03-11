@@ -190,7 +190,7 @@
     :root {
         --th-h1: calc(120px * 0.4);
         --th-h2: calc(64px * 0.4);
-        --th-h3: calc(54px * 0.4);
+        --th-h3: calc(54px * 0.6);
         --th-h4: calc(35px * 0.5);
         --th-p1: calc(24px * 0.70);
         --th-p2: calc(18px * 0.80);
