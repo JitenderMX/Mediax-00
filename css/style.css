@@ -477,15 +477,19 @@ nav .nav-right a {
     /* width: 100%; */
     max-width: 70px;
 }
-
+.tyb-outer{
+    padding-top: 10px;
+    border-top: 1px solid var(--th-color-2);
+}
 .tyb-box {
-    border-radius: 20px;
-    padding: 20px;
-    height: 250px;
-    background-color: #F5F5F5;
-    display: flex;
+    padding: 10px;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 20px;
+    height: 250px;
+    background-color: #F5F5F5; */
+    border-right: 1px solid var(--th-color-2);
 }
 
 .tyb-box p {
@@ -528,23 +532,26 @@ nav .nav-right a {
 
 .bs-container {
     display: flex;
-    width: 10000px;
+    /* width: 10000px; */
     /* transform: translateX(-3000px); */
-    animation: moveLeftToRight 90s linear infinite;
+    /* animation: moveLeftToRight 90s linear infinite; */
 }
 
 .bs-box {
-    width: 300px;
+width: 100%;
+    /* width: 300px;
     height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     border: 1px solid var(--th-color-5);
 }
 
 .bs-box img {
-    max-width: 150px;
-    max-height: 150px;
+    width: 100%;
+    margin: auto;
+    max-width: 130px;
+    max-height: 130px;
     filter: grayscale(100%);
 }
 
