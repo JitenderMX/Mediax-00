@@ -361,6 +361,10 @@
         /* background: url(../image/service-5-mob.jpg); */
         background: var(--th-color-2);
     }
+    .service.child-6 {
+        /* background: url(../image/service-4-mob.jpg); */
+        background: var(--th-color-2);
+    }
 
     .sa-box-1 .sa-right-img {
         /* background: url(../image/service-1-mob.jpg); */

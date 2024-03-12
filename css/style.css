@@ -609,6 +609,9 @@ width: 100%;
 .service.child-5 {
     background: url(../image/service-5.jpg);
 }
+.service.child-6 {
+    background: url(../image/service-4.jpg);
+}
 
 .service.child .service-box h4 {
     color: var(--th-color-3);
@@ -654,11 +657,16 @@ width: 100%;
     transform: translate(360px, 257px);
     color: var(--th-color-2);
 }
+.service.child-6 .service-arrow {
+    transform: translate(360px, 257px);
+    color: var(--th-color-2);
+}
 
 .service.child-2 .sec-h h6,
 .service.child-3 .sec-h h6,
 .service.child-4 .sec-h h6,
-.service.child-5 .sec-h h6 {
+.service.child-5 .sec-h h6,
+.service.child-6 .sec-h h6 {
     color: var(--th-color-2);
 }
 
@@ -666,7 +674,8 @@ width: 100%;
 .service.child-2 .service-box.child-2 h4,
 .service.child-3 .service-box.child-3 h4,
 .service.child-4 .service-box.child-4 h4,
-.service.child-5 .service-box.child-5 h4 {
+.service.child-5 .service-box.child-5 h4,
+.service.child-6 .service-box.child-6 h4 {
     font-weight: 700;
 }
 .service.child-1 .service-box.child-1 h
@@ -719,6 +728,7 @@ color: var(--th-color-3);
 .service.child-3 .service-text .data-child[data-child="child-3"],
 .service.child-4 .service-text .data-child[data-child="child-4"],
 .service.child-5 .service-text .data-child[data-child="child-5"]
+.service.child-6 .service-text .data-child[data-child="child-6"]
 {
     display: flex;
     justify-content: center;
