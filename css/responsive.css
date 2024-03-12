@@ -327,35 +327,44 @@
     }
 
     .service .sec-h h6 {
-        color: var(--th-color-2) !important;
+        color: var(--th-color-3) !important;
     }
 
     .service-box h4 {
-        color: var(--th-color-2) !important;
+        color: var(--th-color-3) !important;
     }
 
+    .service {
+        background: var(--th-color-2);
+    }
     .service.child-1 {
-        background: url(../image/service-1-mob.jpg);
+        /* background: url(../image/service-1-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     .service.child-2 {
-        background: url(../image/service-2-mob.jpg);
+        /* background: url(../image/service-2-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     .service.child-3 {
-        background: url(../image/service-3-mob.jpg);
+        /* background: url(../image/service-3-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     .service.child-4 {
-        background: url(../image/service-4-mob.jpg);
+        /* background: url(../image/service-4-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     .service.child-5 {
-        background: url(../image/service-5-mob.jpg);
+        /* background: url(../image/service-5-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     .sa-box-1 .sa-right-img {
-        background-image: url(../image/service-1-mob.jpg);
+        /* background: url(../image/service-1-mob.jpg); */
+        background: var(--th-color-2);
     }
 
     
