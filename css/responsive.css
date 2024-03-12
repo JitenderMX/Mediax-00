@@ -188,7 +188,7 @@
 
 @media screen and (max-width: 576px) {
     :root {
-        --th-h1: calc(120px * 0.4);
+        --th-h1: calc(120px * 0.3);
         --th-h2: calc(64px * 0.4);
         --th-h3: calc(54px * 0.6);
         --th-h4: calc(35px * 0.5);
