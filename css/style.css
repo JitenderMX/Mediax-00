@@ -564,7 +564,7 @@ width: 100%;
     background: url(../image/service-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     transition: all .5s;
 }
 
@@ -678,7 +678,7 @@ width: 100%;
 .service.child-6 .service-box.child-6 h4 {
     font-weight: 700;
 }
-.service.child-1 .service-box.child-1 h
+/* .service.child-1 .service-box.child-1 h */
 
 .service.child-1 .service-arrow {
     transform: translate(371px, 18px);
@@ -727,7 +727,7 @@ color: var(--th-color-3);
 .service.child-2 .service-text .data-child[data-child="child-2"],
 .service.child-3 .service-text .data-child[data-child="child-3"],
 .service.child-4 .service-text .data-child[data-child="child-4"],
-.service.child-5 .service-text .data-child[data-child="child-5"]
+.service.child-5 .service-text .data-child[data-child="child-5"],
 .service.child-6 .service-text .data-child[data-child="child-6"]
 {
     display: flex;
