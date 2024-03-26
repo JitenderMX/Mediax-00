@@ -450,6 +450,8 @@ nav .nav-right a {
 .home-hero .circle-img {
     max-width: 130px;
     width: 100%;
+    position: relative;
+    z-index: 4;
 }
 
 .home-hero .floating-img {
