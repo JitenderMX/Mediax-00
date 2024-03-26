@@ -117,13 +117,14 @@
                         <div class="tyb-text">
                             <p>If our clients are happy, then so are we. We put our hearts into collectively creating
                                 pivotal pathways for your brand to be seen and heard by the crowd.</p>
-                            <p class="mb-0">If our clients are happy, then so are we. We put our hearts into collectively creating
+                            <p class="mb-0">If our clients are happy, then so are we. We put our hearts into
+                                collectively creating
                                 pivotal pathways for your brand to be seen and heard by the crowd.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-3 mt-md-5">
-                    <div class="col-6 col-md-3 p-2">
+                    <div class="col-md-6 col-lg-3 p-2">
                         <div class="tyb-outer">
                             <div class="tyb-box tyb-box-1">
                                 <div class="">
@@ -136,7 +137,7 @@
                         </div>
 
                     </div>
-                    <div class="col-6 col-md-3 p-2">
+                    <div class="col-md-6 col-lg-3 p-2">
                         <div class="tyb-outer">
                             <div class="tyb-box tyb-box-2">
                                 <div class="">
@@ -148,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 p-2">
+                    <div class="col-md-6 col-lg-3 p-2">
                         <div class="tyb-outer">
                             <div class="tyb-box tyb-box-1">
                                 <div class="">
@@ -160,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 p-2">
+                    <div class="col-md-6 col-lg-3 p-2">
                         <div class="tyb-outer">
                             <div class="tyb-box tyb-box-1">
                                 <div class="">
@@ -702,6 +703,21 @@
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
     <script>
+        $(document).ready(function() {
+            $(document).mousemove(function(event) {
+                var mouseX = event.pageX;
+                var mouseY = event.pageY;
+                $(".floating-img").css({
+                    left: mouseX,
+                    top: mouseY
+                });
+            });
+        });
+        </script>
+    <script>
+        // http://ahrengot.com/tutorials/greensock-javascript-animation
+
+
         var hasCodeRun = false;
         $(window).scroll(function () {
             var scrollPos = $(window).scrollTop();

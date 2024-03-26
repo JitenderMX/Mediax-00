@@ -454,7 +454,7 @@ nav .nav-right a {
 
 .home-hero .floating-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     position: absolute;
     pointer-events: none;
     transition: transform 0.3s ease-out;
@@ -462,7 +462,9 @@ nav .nav-right a {
     left: 50%;
     transform: translate(-30%, -60%);
     z-index: 1;
-    animation: zigzag 10s infinite alternate;
+    pointer-events: none;
+    transition: all 0.3s ease; 
+    /* animation: zigzag 10s infinite alternate; */
 }
 
 /* -------------  Home Hero Banner Section  End ------------- */
@@ -712,7 +714,7 @@ width: 100%;
 }
 
 .service-text h5 {
-    text-transform: capitalize !important;
+    text-transform: none !important;
     line-height: 136%;
 }
 

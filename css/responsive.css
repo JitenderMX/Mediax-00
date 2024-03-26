@@ -52,7 +52,9 @@
     nav .menu-btn .fa-bars {
         font-size: 20px !important;
     }
-
+    .tyb-box {
+        border-right: none;
+    }
     /* home hero  */
     .home-hero .circle-img {
         position: relative;
@@ -288,6 +290,7 @@
 
     .success-stories .ss-box .ss-text::after {
         transform: scale(1, 1);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
     }
 
     .success-stories .ss-box .ss-text img {
